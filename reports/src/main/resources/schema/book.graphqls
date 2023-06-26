@@ -1,0 +1,16 @@
+type Book {
+    id: ID!
+    title: String!
+    author: String!
+}
+
+type Query {
+    books: [Book]
+    getBookById(id : ID) : BookResponse
+}
+
+type BookResponse {
+    id: ID
+    title: String
+    author: String
+}
